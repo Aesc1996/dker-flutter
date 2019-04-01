@@ -1,0 +1,19 @@
+language: generic
+env:
+  global:
+    - BUILD_TEST=cloud/docker
+    - PROJECT_TEST=odroidfeeder
+jobs:
+  include:
+    - stage: test
+      script:
+        - cd $BUILD_TEST
+        - bash build-test.sh $PROJECT_TEST
+    - stage: build
+      script:
+        - cd $BUILD_TEST
+        - bash build-test.sh $PROJECT_TEST build
+
+branches:
+  only:
+    - develop

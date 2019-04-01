@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/dodopontocom/dker-flutter.svg?branch=develop)](https://travis-ci.org/dodopontocom/dker-flutter)  
 # odroidfeeder
 
 A new Flutter project.
@@ -28,7 +29,7 @@ This repository will help you to run flutter completely without any installation
 ### Run script test as below  
 
 ``` 
-~$ ./test.sh <your_project_name>  
+~$ ./cloud/docker/build-test.sh <your_project_name>  
 ```
 
 ### Build an example as below  
